@@ -7,450 +7,229 @@
 <meta name="description" content="Unser tatkräftiges und hilfsbereites Team hilft Ihnen bei Fußproblemen aller Art. Schnell, unkompliziert und professionell.">
 <meta property="og:title" content="BARFUSS Fußpflege Spezialisten">
 <meta property="og:description" content="Unser tatkräftiges und hilfsbereites Team hilft Ihnen bei Fußproblemen aller Art. Schnell, unkompliziert und professionell.">
-<meta property="og:image" content="assets/hero-n5pnwd.jpg">
+<meta property="og:image" content="assets/hero-owj09t.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.35/build/spline-viewer.js"></script>
 <style>
-:root{
-  --bg:#FBF7F2;
-  --surface:#FFFFFF;
-  --text:#1F1A15;
-  --text-muted:#6B5D52;
-  --accent:#C8643C;
-  --accent-dark:#A14A28;
-  --border:#EFE6DA;
-  --radius:20px;
-  --shadow:0 8px 32px rgba(46,30,20,0.08);
-}
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{
-  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-  font-feature-settings:'cv11','ss01';
-}
-img{max-width:100%;height:auto;display:block;}
-a{color:var(--accent);text-decoration:none;transition:color 0.2s;}
-a:hover{color:var(--accent-dark);}
+:root{--bg-0:#070B14;--bg-1:#0C1220;--bg-2:#111827;--bg-card:rgba(255,255,255,0.04);--border:rgba(255,255,255,0.08);--border-h:rgba(255,255,255,0.15);--text:#F1F5F9;--text-m:#94A3B8;--text-d:#64748B;--accent:#6366F1;--glow:rgba(99,102,241,0.3);--r:20px}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-0);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent);text-decoration:none;transition:all .3s}
+h1,h2,h3{font-family:'Instrument Serif',Georgia,serif;font-weight:400;line-height:1.1;letter-spacing:-.02em;color:var(--text)}
+h1 em,h2 em,h3 em{font-style:italic;color:var(--accent)}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.section{padding:120px 0;position:relative}
 
-h1,h2,h3,h4{
-  font-family:'Fraunces',Georgia,serif;
-  font-weight:600;
-  line-height:1.15;
-  letter-spacing:-0.02em;
-  color:var(--text);
-}
+.glass{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:var(--r);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);position:relative;overflow:hidden}
+.glass::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(135deg,rgba(255,255,255,0.12) 0%,transparent 50%,rgba(255,255,255,0.06) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.glass-s{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12)}
 
-.container{max-width:1200px;margin:0 auto;padding:0 24px;}
-.section{padding:96px 0;}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,11,20,0.8);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+.nav-in{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:16px 24px}
+.nav-brand{display:flex;align-items:center;gap:14px}
+.nav-logo-img{height:40px;width:auto;max-width:180px;object-fit:contain;filter:brightness(1.1)}
+.nav-logo-t{font-family:'Instrument Serif',Georgia,serif;font-size:24px;color:var(--text);font-style:italic}
+.nav-links{display:flex;gap:36px;align-items:center}
+.nav-links a{color:var(--text-m);font-size:14px;font-weight:500}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{background:var(--accent);color:#fff!important;padding:10px 24px;border-radius:50px;font-weight:600;font-size:14px;box-shadow:0 0 20px var(--glow)}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 4px 30px var(--glow)}
+@media(max-width:768px){.nav-links{display:none}}
 
-/* Navigation */
-.nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  background:rgba(255,255,255,0.85);
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--border);
-  padding:16px 0;
-}
-.nav-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;max-width:1200px;margin:0 auto;padding:0 24px;}
-.nav-brand{display:flex;align-items:center;gap:14px;}
-.nav-logo-img{height:44px;width:auto;max-width:200px;object-fit:contain;}
-.nav-logo-text{
-  font-family:'Fraunces',Georgia,serif;
-  font-size:22px;font-weight:700;color:var(--text);letter-spacing:-0.02em;
-}
-.nav-links{display:flex;gap:32px;align-items:center;}
-.nav-links a{color:var(--text);font-size:14px;font-weight:500;}
-.nav-links a:hover{color:var(--accent);}
-.nav-cta{
-  background:var(--accent);color:#fff;padding:12px 24px;border-radius:50px;
-  font-weight:600;font-size:14px;
-}
-.nav-cta:hover{background:var(--accent-dark);color:#fff;}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;overflow:hidden}
+.hero-vid{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero-vid video{width:100%;height:100%;object-fit:cover;opacity:.25;filter:saturate(.5) brightness(.6)}
+.hero-ov{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(7,11,20,.7) 0%,rgba(7,11,20,.4) 40%,rgba(7,11,20,.85) 100%)}
+.hero-3d{position:absolute;right:-5%;top:10%;width:55%;height:80%;z-index:2;opacity:.7;pointer-events:none}
+.hero-3d spline-viewer{width:100%;height:100%}
+@media(max-width:900px){.hero-3d{display:none}}
+.hero-c{position:relative;z-index:10;max-width:640px}
+.hero-ey{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;border-radius:50px;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);backdrop-filter:blur(10px);margin-bottom:28px}
+.hero-ey::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent)}
+.hero h1{font-size:clamp(44px,6vw,72px);margin-bottom:24px;letter-spacing:-.03em}
+.hero p{font-size:clamp(17px,2vw,20px);color:var(--text-m);margin-bottom:36px;max-width:520px;line-height:1.7}
+.hero-rt{display:inline-flex;align-items:center;gap:10px;padding:10px 20px;border-radius:50px;font-size:14px;font-weight:500;color:var(--text-m);border:1px solid var(--border);background:rgba(255,255,255,0.03);margin-bottom:28px}
+.hero-rt .st{color:#FFC107;font-size:15px}
+.hero-a{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:50px;font-weight:600;font-size:15px;transition:all .3s;cursor:pointer;border:none;font-family:inherit}
+.btn-p{background:var(--accent);color:#fff;box-shadow:0 0 24px var(--glow)}
+.btn-p:hover{color:#fff;transform:translateY(-2px);box-shadow:0 8px 40px var(--glow)}
+.btn-g{background:rgba(255,255,255,0.05);color:var(--text);border:1px solid var(--border);backdrop-filter:blur(10px)}
+.btn-g:hover{background:rgba(255,255,255,0.1);color:var(--text);border-color:var(--border-h)}
 
-@media(max-width:768px){
-  .nav-links{display:none;}
-}
+.s-ey{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+.s-t{font-size:clamp(36px,4.5vw,56px);margin-bottom:18px}
+.s-st{font-size:18px;color:var(--text-m);max-width:560px;line-height:1.7}
+.s-h{margin-bottom:72px}
+.s-h.c{text-align:center}
+.s-h.c .s-st{margin:0 auto}
+.s-div{height:1px;border:none;margin:0;background:linear-gradient(90deg,transparent,var(--border),transparent)}
 
-/* Hero */
-.hero{
-  position:relative;
-  min-height:88vh;
-  display:flex;align-items:center;
-  padding:140px 0 80px;
-  overflow:hidden;
-}
-.hero-bg{
-  position:absolute;inset:0;
-  background:url('assets/hero-n5pnwd.jpg') center/cover no-repeat;
-}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 100%);}
-.hero-content{
-  position:relative;z-index:2;
-  max-width:720px;
-}
-.hero-eyebrow{
-  display:inline-flex;align-items:center;gap:8px;
-  background:rgba(255,255,255,0.15);
-  backdrop-filter:blur(10px);
-  color:#fff;
-  padding:8px 18px;border-radius:50px;
-  font-size:13px;font-weight:600;letter-spacing:0.02em;
-  margin-bottom:24px;
-}
-.hero h1{
-  font-size:clamp(40px,6vw,68px);
-  color:#fff;
-  margin-bottom:20px;
-  letter-spacing:-0.03em;
-}
-.hero p{
-  font-size:clamp(17px,2vw,21px);
-  color:rgba(255,255,255,0.9);
-  margin-bottom:32px;
-  max-width:560px;
-}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
-.btn{
-  display:inline-flex;align-items:center;gap:10px;
-  padding:16px 32px;border-radius:50px;
-  font-weight:600;font-size:15px;
-  transition:all 0.25s;
-  cursor:pointer;border:none;
-  font-family:inherit;
-}
-.btn-primary{background:var(--accent);color:#fff;}
-.btn-primary:hover{background:var(--accent-dark);color:#fff;transform:translateY(-2px);box-shadow:0 12px 32px #C8643C55;}
-.btn-secondary{
-  background:rgba(255,255,255,0.15);
-  color:#fff;
-  border:1.5px solid rgba(255,255,255,0.4);
-  backdrop-filter:blur(10px);
-}
-.btn-secondary:hover{background:rgba(255,255,255,0.25);color:#fff;}
+.srv-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+.srv-c{padding:40px 32px;transition:all .4s}
+.srv-c:hover{transform:translateY(-4px);border-color:var(--border-h);box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.srv-i{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:16px;font-size:24px;margin-bottom:24px}
+.srv-c h3{font-size:22px;margin-bottom:10px;font-family:'Inter',sans-serif;font-weight:600}
+.srv-c p{color:var(--text-m);font-size:15px;line-height:1.7}
 
-.hero-rating{
-  display:inline-flex;align-items:center;gap:10px;
-  background:rgba(255,255,255,0.15);
-  backdrop-filter:blur(10px);
-  border:1px solid rgba(255,255,255,0.2);
-  padding:10px 18px;border-radius:50px;
-  margin-bottom:24px;
-  color:#fff;
-  font-size:14px;font-weight:500;
-}
-.hero-rating .stars{color:#FFC107;font-size:16px;}
+.abt{background:var(--bg-1)}
+.abt-g{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.abt-t h2{font-size:clamp(32px,4vw,48px);margin-bottom:28px}
+.abt-t p{color:var(--text-m);font-size:17px;line-height:1.8;margin-bottom:18px}
+.abt-img{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;position:relative}
+.abt-img img{width:100%;height:100%;object-fit:cover}
+.abt-img::after{content:'';position:absolute;inset:0;box-shadow:inset 0 0 80px rgba(7,11,20,.4);pointer-events:none}
+.abt-s{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:36px;padding-top:36px;border-top:1px solid var(--border)}
+.st-n{font-family:'Instrument Serif',serif;font-size:40px;color:var(--accent);font-style:italic}
+.st-l{font-size:13px;color:var(--text-d);margin-top:4px}
+@media(max-width:900px){.abt-g{grid-template-columns:1fr;gap:48px}}
 
-/* Section title */
-.section-eyebrow{
-  display:block;
-  font-size:13px;font-weight:600;letter-spacing:0.08em;
-  text-transform:uppercase;
-  color:var(--accent);
-  margin-bottom:12px;
-}
-.section-title{
-  font-size:clamp(32px,4vw,48px);
-  margin-bottom:18px;
-}
-.section-subtitle{
-  font-size:18px;
-  color:var(--text-muted);
-  max-width:620px;
-  line-height:1.6;
-}
-.section-head{margin-bottom:64px;text-align:center;}
-.section-head .section-subtitle{margin:0 auto;}
+.gal-g{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gal-i{border-radius:var(--r);overflow:hidden;aspect-ratio:1/1;position:relative;cursor:pointer}
+.gal-i img{width:100%;height:100%;object-fit:cover;transition:transform .6s,filter .6s;filter:saturate(.8) brightness(.9)}
+.gal-i:hover img{transform:scale(1.08);filter:saturate(1) brightness(1)}
+.gal-i::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(7,11,20,.6) 100%);pointer-events:none}
+@media(max-width:768px){.gal-g{grid-template-columns:1fr 1fr}}
 
-/* Services */
-.services-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:24px;
-}
-.service-card{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  padding:36px 32px;
-  transition:all 0.3s;
-}
-.service-card:hover{
-  transform:translateY(-4px);
-  box-shadow:var(--shadow);
-  border-color:var(--accent);
-}
-.service-icon{
-  display:inline-flex;align-items:center;justify-content:center;
-  width:56px;height:56px;
-  background:rgba(200,100,60,0.08);
-  border-radius:14px;
-  font-size:26px;
-  margin-bottom:20px;
-}
-.service-card h3{font-size:21px;margin-bottom:10px;}
-.service-card p{color:var(--text-muted);font-size:15px;line-height:1.65;}
+.ctc{background:var(--bg-1)}
+.ctc-g{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.ctc-info{display:flex;flex-direction:column;gap:16px}
+.ctc-it{display:flex;align-items:center;gap:20px;padding:24px 28px}
+.ctc-ic{flex-shrink:0;width:48px;height:48px;border-radius:14px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 0 20px var(--glow)}
+.ctc-it .lb{font-size:12px;color:var(--text-d);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.ctc-it .vl{font-size:17px;font-weight:500;color:var(--text)}
+.ctc-it .vl a{color:var(--text)}
+.ctc-it .vl a:hover{color:var(--accent)}
+.ctc-cta{padding:56px 48px;text-align:center;background:linear-gradient(135deg,rgba(255,255,255,0.03),rgba(255,255,255,0.06))}
+.ctc-cta h3{font-size:32px;margin-bottom:14px;font-style:italic}
+.ctc-cta p{color:var(--text-m);margin-bottom:32px;font-size:16px}
+@media(max-width:900px){.ctc-g{grid-template-columns:1fr}}
 
-/* About */
-.about{background:var(--surface);}
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:64px;
-  align-items:center;
-}
-.about-text h2{font-size:clamp(28px,3.5vw,40px);margin-bottom:24px;}
-.about-text p{color:var(--text-muted);font-size:17px;line-height:1.75;margin-bottom:18px;}
-.about-image{
-  border-radius:var(--radius);
-  overflow:hidden;
-  aspect-ratio:4/5;
-  background:var(--bg);
-}
-.about-image img{width:100%;height:100%;object-fit:cover;}
-.about-stats{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:24px;
-  margin-top:32px;
-  padding-top:32px;
-  border-top:1px solid var(--border);
-}
-.stat{display:flex;flex-direction:column;}
-.stat-num{
-  font-family:'Fraunces',Georgia,serif;
-  font-size:36px;font-weight:700;color:var(--accent);
-}
-.stat-label{font-size:13px;color:var(--text-muted);margin-top:4px;}
+.ft{background:var(--bg-0);border-top:1px solid var(--border);padding:64px 0 32px}
+.ft-g{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.ft-br{font-family:'Instrument Serif',serif;font-size:26px;color:var(--text);margin-bottom:12px;font-style:italic}
+.ft p{font-size:14px;line-height:1.7;color:var(--text-d)}
+.ft h4{color:var(--text-m);font-size:12px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px;font-weight:600}
+.ft a{display:block;color:var(--text-d);font-size:14px;padding:5px 0}
+.ft a:hover{color:var(--accent)}
+.ft-b{padding-top:32px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--text-d)}
+@media(max-width:768px){.ft-g{grid-template-columns:1fr;gap:32px}.ft-b{flex-direction:column;gap:12px;text-align:center}}
 
-@media(max-width:900px){
-  .about-grid{grid-template-columns:1fr;gap:40px;}
-}
-
-/* Gallery */
-.gallery-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-}
-.gallery-item{
-  border-radius:var(--radius);
-  overflow:hidden;
-  aspect-ratio:1/1;
-  background:var(--surface);
-}
-.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s;}
-.gallery-item:hover img{transform:scale(1.05);}
-@media(max-width:768px){.gallery-grid{grid-template-columns:1fr 1fr;}}
-
-/* Contact */
-.contact{background:var(--surface);}
-.contact-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:48px;
-  align-items:start;
-}
-.contact-info{display:flex;flex-direction:column;gap:24px;}
-.contact-item{
-  display:flex;align-items:flex-start;gap:18px;
-  padding:24px;
-  background:var(--bg);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-}
-.contact-icon{
-  flex-shrink:0;
-  width:48px;height:48px;border-radius:14px;
-  background:var(--accent);color:#fff;
-  display:flex;align-items:center;justify-content:center;
-  font-size:20px;
-}
-.contact-item .label{font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
-.contact-item .value{font-size:17px;font-weight:500;color:var(--text);}
-.contact-item .value a{color:var(--text);}
-.contact-item .value a:hover{color:var(--accent);}
-
-.contact-cta{
-  background:var(--bg);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  padding:48px 40px;
-  text-align:center;
-}
-.contact-cta h3{font-size:28px;margin-bottom:14px;}
-.contact-cta p{color:var(--text-muted);margin-bottom:28px;}
-
-@media(max-width:900px){
-  .contact-grid{grid-template-columns:1fr;}
-}
-
-/* Footer */
-.footer{
-  background:#1A1410;
-  color:rgba(255,255,255,0.7);
-  padding:64px 0 32px;
-}
-.footer-grid{
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr;
-  gap:48px;
-  margin-bottom:48px;
-}
-.footer-brand{
-  font-family:'Fraunces',Georgia,serif;
-  font-size:24px;font-weight:700;color:#fff;margin-bottom:12px;
-}
-.footer p{font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);}
-.footer h4{color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:18px;font-weight:600;}
-.footer a{display:block;color:rgba(255,255,255,0.7);font-size:14px;padding:6px 0;}
-.footer a:hover{color:var(--accent);}
-.footer-bottom{
-  padding-top:32px;
-  border-top:1px solid rgba(255,255,255,0.1);
-  text-align:center;
-  font-size:13px;color:rgba(255,255,255,0.5);
-}
-@media(max-width:768px){
-  .footer-grid{grid-template-columns:1fr;gap:32px;}
-}
-
-/* Animations */
-.fade-in{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease;}
-.fade-in.visible{opacity:1;transform:translateY(0);}
+.rv{opacity:0;transform:translateY(32px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.rv.vis{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+.ag{position:absolute;width:600px;height:600px;border-radius:50%;filter:blur(120px);opacity:.15;pointer-events:none;z-index:0;background:var(--accent)}
 </style>
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <div class="nav-brand">
-      <img src="assets/hero-n5pnwd.jpg" alt="BARFUSS Fußpflege Spezialisten" class="nav-logo-img">
-    </div>
-    <div class="nav-links">
-      
-      <a href="#ueber">Über uns</a>
-      <a href="#galerie">Galerie</a>
-      <a href="#kontakt">Kontakt</a>
-    </div>
-    <a href="#kontakt" class="nav-cta">Termin anfragen</a>
+<nav class="nav"><div class="nav-in">
+  <div class="nav-brand">
+    <img src="assets/hero-owj09t.jpg" alt="BARFUSS Fußpflege Spezialisten" class="nav-logo-img">
   </div>
-</nav>
+  <div class="nav-links">
+    
+    <a href="#ueber">Über uns</a>
+    
+    <a href="#kontakt">Kontakt</a>
+  </div>
+  <a href="#kontakt" class="nav-cta">Termin anfragen</a>
+</div></nav>
 
 <header class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
-  <div class="container">
-    <div class="hero-content">
-      <span class="hero-eyebrow">✨ Kosmetikstudio · Hamburg</span>
-      <h1>Fußbeschwerden?Wir helfen schon ab 23 EUR</h1>
-      <p>Unser tatkräftiges und hilfsbereites Team hilft Ihnen bei Fußproblemen aller Art. Schnell, unkompliziert und professionell.</p>
-      <div class="hero-rating"><span class="stars">★★★★☆</span> <strong>4.1</strong> · 380 Bewertungen</div><br>
-      <div class="hero-actions">
-        <a href="#kontakt" class="btn btn-primary">Termin vereinbaren →</a>
-        <a href="tel:040/18173388" class="btn btn-secondary">📞 040/18173388 </a>
-      </div>
+  <div class="hero-vid"><video autoplay muted loop playsinline><source src="https://videos.pexels.com/video-files/28148270/12310771_1920_1080_24fps.mp4" type="video/mp4"></video></div>
+  <div class="hero-ov"></div>
+  <div class="ag" style="top:-200px;right:-200px"></div>
+  <div class="hero-3d"><spline-viewer url="https://prod.spline.design/7ZoGKAmh2VTvMxuy/scene.splinecode" style="width:100%;height:100%"></spline-viewer></div>
+  <div class="container"><div class="hero-c">
+    <div class="hero-ey rv">Kosmetikstudio · Hamburg</div>
+    <div class="hero-rt rv d1"><span class="st">★★★★☆</span>&nbsp;<strong style="color:var(--text)">4.1</strong>&nbsp;·&nbsp;380 Bewertungen</div><br>
+    <h1 class="rv d1"><em>Fußbeschwerden?Wir helfen schon ab 23 EUR</em></h1>
+    <p class="rv d2">Unser tatkräftiges und hilfsbereites Team hilft Ihnen bei Fußproblemen aller Art. Schnell, unkompliziert und professionell.</p>
+    <div class="hero-a rv d3">
+      <a href="#kontakt" class="btn btn-p">Termin vereinbaren →</a>
+      <a href="tel:040/18173388" class="btn btn-g">📞 Jetzt anrufen</a>
     </div>
-  </div>
+  </div></div>
 </header>
+<hr class="s-div">
 
 
 
 
-<section id="ueber" class="section about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-text fade-in">
-        <span class="section-eyebrow">Über BARFUSS Fußpflege Spezialisten</span>
-        <h2>Mehr als nur ein Kosmetikstudio</h2>
-        <p>Sie erreichen uns für eine Terminvereinbarung: Filiale Wandsbek:040/18173388 oder0155/65945010Filiale St. Georg :040/87974520</p>
-        <div class="about-stats">
-          <div class="stat"><span class="stat-num">4.1★</span><span class="stat-label">380 Google Bewertungen</span></div>
-          <div class="stat"><span class="stat-num">📍</span><span class="stat-label">Hamburg</span></div>
-        </div>
+<section id="ueber" class="section abt">
+  <div class="container"><div class="abt-g">
+    <div class="abt-t">
+      <div class="s-ey rv">◆ Über uns</div>
+      <h2 class="rv d1">Mehr als nur <em>Kosmetikstudio</em></h2>
+      <p class="rv d2">Sie erreichen uns für eine Terminvereinbarung: Filiale Wandsbek:040/18173388 oder0155/65945010Filiale St. Georg :040/87974520</p>
+      <div class="abt-s rv d3">
+        <div><span class="st-n">4.1★</span><div class="st-l">380 Google Bewertungen</div></div>
+        <div><span class="st-n">📍</span><div class="st-l">Hamburg</div></div>
       </div>
-      <div class="about-image fade-in"><img src="assets/hero-n5pnwd.jpg" alt="BARFUSS Fußpflege Spezialisten"></div>
     </div>
-  </div>
+    <div class="abt-img rv"><img src="assets/hero-owj09t.jpg" alt="BARFUSS Fußpflege Spezialisten"></div>
+  </div></div>
 </section>
+<hr class="s-div">
 
 
 
-<section id="kontakt" class="section contact">
+<section id="kontakt" class="section ctc" style="position:relative">
+  <div class="ag" style="top:-200px;right:-300px;opacity:.1"></div>
   <div class="container">
-    <div class="section-head fade-in">
-      <span class="section-eyebrow">Kontakt</span>
-      <h2 class="section-title">Wir freuen uns auf Sie</h2>
-      <p class="section-subtitle">Vereinbaren Sie jetzt einen Termin oder kontaktieren Sie uns mit Ihren Fragen.</p>
+    <div class="s-h c">
+      <div class="s-ey rv">◆ Kontakt</div>
+      <h2 class="s-t rv d1">Wir freuen uns <em>auf Sie</em></h2>
+      <p class="s-st rv d2">Vereinbaren Sie jetzt einen Termin oder kontaktieren Sie uns.</p>
     </div>
-    <div class="contact-grid">
-      <div class="contact-info">
+    <div class="ctc-g">
+      <div class="ctc-info">
+        <div class="ctc-it glass rv"><div class="ctc-ic">📞</div><div><div class="lb">Telefon</div><div class="vl"><a href="tel:040/18173388">040/18173388 </a></div></div></div>
         
-        <div class="contact-item">
-          <div class="contact-icon">📞</div>
-          <div>
-            <div class="label">Telefon</div>
-            <div class="value"><a href="tel:040/18173388">040/18173388 </a></div>
-          </div>
-        </div>
-        
-        
-        <div class="contact-item">
-          <div class="contact-icon">📍</div>
-          <div>
-            <div class="label">Adresse</div>
-            <div class="value">Hamburg</div>
-          </div>
-        </div>
+        <div class="ctc-it glass rv d2"><div class="ctc-ic">📍</div><div><div class="lb">Adresse</div><div class="vl">Hamburg</div></div></div>
       </div>
-      <div class="contact-cta">
-        <h3>Jetzt Termin anfragen</h3>
+      <div class="ctc-cta glass-s glass rv d1">
+        <h3>Jetzt <em>Termin</em> anfragen</h3>
         <p>Wir melden uns innerhalb von 24 Stunden bei Ihnen zurück.</p>
-        <a href="tel:040/18173388" class="btn btn-primary">Jetzt anrufen</a>
+        <a href="tel:040/18173388" class="btn btn-p">Jetzt anrufen</a>
       </div>
     </div>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">BARFUSS Fußpflege Spezialisten</div>
-        <p>Kosmetikstudio · Hamburg</p>
-        <p style="margin-top:12px;">📞 040/18173388 </p>
-        
-      </div>
-      <div>
-        <h4>Navigation</h4>
-        
-        <a href="#ueber">Über uns</a>
-        <a href="#galerie">Galerie</a>
-        <a href="#kontakt">Kontakt</a>
-      </div>
-      <div>
-        <h4>Rechtliches</h4>
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-        
-      </div>
+<footer class="ft"><div class="container">
+  <div class="ft-g">
+    <div>
+      <div class="ft-br">BARFUSS Fußpflege Spezialisten</div>
+      <p>Kosmetikstudio · Hamburg</p>
+      <p style="margin-top:12px">📞 040/18173388 </p>
+      
     </div>
-    <div class="footer-bottom">
-      © 2026 BARFUSS Fußpflege Spezialisten. Alle Rechte vorbehalten.
+    <div>
+      <h4>Navigation</h4>
+      
+      <a href="#ueber">Über uns</a>
+      
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div>
+      <h4>Rechtliches</h4>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      
     </div>
   </div>
-</footer>
+  <div class="ft-b"><span>© 2026 BARFUSS Fußpflege Spezialisten</span><span style="font-style:italic">Crafted with precision</span></div>
+</div></footer>
 
 <script>
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.12 });
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+const o=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');o.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(e=>o.observe(e));
 </script>
 </body>
 </html>
